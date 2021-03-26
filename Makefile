@@ -1,7 +1,7 @@
 ONNX_PROTO := bazel-onnx_go/external/com_github_onnx_onnx/onnx/onnx.proto3
 PROTOC := bazel-bin/external/com_google_protobuf/protoc
 
-all: gen_py gen_cpp gen_golang
+all: gen_golang
 
 ${ONNX_PROTO}:
 	bazel build @com_github_onnx_onnx//:proto3
